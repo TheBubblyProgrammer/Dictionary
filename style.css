@@ -40,10 +40,7 @@ body{
     padding: 0 45px;
     text-transform: capitalize;
 }
-.search input:focus ~ i{
-    padding: 0 42px;
-    border: 2px solid blue;
-}
+
 .search input::placeholder{
     color: skyblue;
 }
@@ -59,10 +56,123 @@ body{
     pointer-events: none;
     
 }
+.search input:focus{
+    padding: 0 42px;
+    border: 2px solid blue;
+}
+.search input:focus~i {
+    border: 2px solid blue;
+}
 
 .search span{
     right: 15px;
     font-size: 18px;
     cursor: pointer;
+    display: none;
 }
+.search input:valid ~ span{
+   display:block;
+}
+
+.wrapper ul{
+     opacity: 0;
+    height: 0;
+overflow: 0;
+transition: all 2s ease;
+
+}
+
+.wrapper.active ul{
+height: 303px;
+opacity: 1;
+}
+.wrapper .info{
+    font-size: 15px;
+    color: grey;
+    margin: -3px 0 -10px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+.wrapper .active .info{
+    display: none;
+}
+.info span{
+    font-weight: bolder;
+}
+.wrapper ul li{
+    display: flex;
+    margin-bottom: 14px;
+    padding-bottom: 17px;
+    justify-content: space-around;
+    border-bottom: 1px solid blue;
+    padding-right: 28%;
+   
+}
+ul li:last-child{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+}
+ul .word p{
+   
+ font-size: 22px;
+ font-weight: 500;   
+ 
+
+}
+ul .word span{
+    font-size: 12px;
+    color: grey;
+}
+ul .word i{
+    cursor: pointer;
+    font-size: 20px;
+    color: grey;
+  
+}
+ul .content{
+    max-height: 215px;
+    overflow-y: auto;
+}
+ul.content::-webkit-scrollbar-corner{
+    width: 0px;
+}
+.content li .details{
+    padding-left: 40px;
+    border-radius: 4px 0 0 4px;
+    border-left: 3px solid darkblue;
+    padding-left: 5px;
+}
+
+.content li .details span{
+    font-size: 15px;
+    color: gray; 
+}
+.content li .details p{
+    font-size: 17px;
+    font-weight: 500;
+    padding: 3px;
+}
+.synonyms .details .list{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.synonyms .details .list span{
+    margin-right:7px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
