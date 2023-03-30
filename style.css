@@ -12,12 +12,12 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: blueviolet;
+    background-color: lightcyan
 }
 
 .wrapper{
     width: 450px;
-    background-color: #fff;
+    background-color: #e48181;
     border-radius: 15px;
     padding: 28px 28px 45px;
 }
@@ -88,7 +88,7 @@ opacity: 1;
 }
 .wrapper .info{
     font-size: 15px;
-    color: grey;
+    color: rgb(247, 232, 232);
     margin: -3px 0 -10px;
     padding-bottom: 20px;
     padding-top: 5px;
@@ -122,12 +122,12 @@ ul .word p{
 }
 ul .word span{
     font-size: 12px;
-    color: grey;
+    color: rgb(230, 222, 222);
 }
 ul .word i{
     cursor: pointer;
     font-size: 20px;
-    color: grey;
+    color: rgb(241, 241, 241);
   
 }
 ul .content{
@@ -146,7 +146,7 @@ ul.content::-webkit-scrollbar-corner{
 
 .content li .details span{
     font-size: 15px;
-    color: gray; 
+    color: rgb(255, 253, 253); 
 }
 .content li .details p{
     font-size: 17px;
